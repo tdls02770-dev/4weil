@@ -14,6 +14,7 @@ export function Home() {
         func:SwitchLang
     })
     return `
+        <div style="gap:20px">
         <div class="topnav">
             <button class="topnav-btn">
                 <img src="src/asst/topnav-icon.jpg" alt="logo" />
@@ -28,7 +29,7 @@ export function Home() {
                 </div>
             </label>
         </div>
-        <div style="gap:20px">
+        
         <div class="thikr-sun" id="Madhkar-card">
             <div class="headers">
                 <img class="sun-img" src="src/asst/sun.png" alt="sun" />
