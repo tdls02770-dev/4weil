@@ -28,7 +28,7 @@ export function Home() {
                 </div>
             </label>
         </div>
-
+        <div style="gap:20px">
         <div class="thikr-sun" id="Madhkar-card">
             <div class="headers">
                 <img class="sun-img" src="src/asst/sun.png" alt="sun" />
@@ -55,6 +55,7 @@ export function Home() {
                 <i class="fa-solid fa-moon" style="color:#1d3950"></i>
                 <h2 style="color:#1d3950">${start_read_btn1.get()}</h2>
             </button>
+        </div>
         </div>
     `;
 }
