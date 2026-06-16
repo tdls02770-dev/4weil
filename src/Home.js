@@ -14,7 +14,6 @@ export function Home() {
         func:SwitchLang
     })
     return `
-        <div style="gap:20px">
         <div class="topnav">
             <button class="topnav-btn">
                 <img src="src/asst/topnav-icon.jpg" alt="logo" />
@@ -56,7 +55,6 @@ export function Home() {
                 <i class="fa-solid fa-moon" style="color:#1d3950"></i>
                 <h2 style="color:#1d3950">${start_read_btn1.get()}</h2>
             </button>
-        </div>
         </div>
     `;
 }
