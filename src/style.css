@@ -1,0 +1,720 @@
+/* ==========================================
+   1. Global Reset & Typography
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+
+/* ==========================================
+   2. Main Container
+========================================== */
+
+.continer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+    max-width: 400px;
+
+    text-align: center;
+
+    background: #f5f7fb;
+    padding: 16px;
+}
+
+
+/* ==========================================
+   3. Bottom Navigation Buttons
+========================================== */
+
+.btn {
+    width: 75px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    padding: 0;
+}
+
+/* Icon wrapper to keep all icons aligned */
+
+.icon-wrapper {
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button text */
+
+.btn-text {
+    color: white;
+    font-size: 0.85rem;
+    font-family: sans-serif;
+
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* Individual icon sizes */
+
+.tisbih-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.prayer-icon {
+    width: 55px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.settings-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   4. Top Navigation Bar
+========================================== */
+
+.topnav {
+    direction: rtl;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 70px;
+
+    background-color: #ffffff;
+
+    padding: 0 16px;
+    border-radius: 20px;
+}
+
+.topnav h1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 1.15rem;
+    font-weight: bold;
+
+    color: #1a2530;
+}
+
+/* Top navigation button */
+
+.topnav-btn {
+    display: flex;
+    align-items: center;
+
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.topnav-btn img {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   5. Adhkar Cards (Morning & Night)
+========================================== */
+
+.thikr-sun,
+.thikr-moon {
+    direction: rtl;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    gap: 12px;
+
+    width: 100%;
+
+    padding: 20px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
+}
+
+.thikr-sun {
+    background: #f8ead0;
+}
+
+.thikr-moon {
+    background: #1d3950;
+}
+
+.thikr-moon button {
+    background-color: #9dd1f1;
+}
+
+
+/* ==========================================
+   6. Card Headers
+========================================== */
+
+.headers {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    width: 100%;
+
+    gap: 10px;
+}
+
+.headers h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    color: #1e293b;
+}
+
+.sun-img,
+.moon-img {
+    width: 60px;
+    height: 50px;
+
+    object-fit: contain;
+}
+
+/* Subtitle text */
+
+.thikr-sun h3,
+.thikr-moon h3 {
+    font-size: 0.85rem;
+
+    color: #64748b;
+    font-weight: normal;
+
+    margin-bottom: 4px;
+}
+
+
+/* ==========================================
+   7. Start Reading Buttons
+========================================== */
+
+.start-read-sun-btn,
+.start-read-moon-btn {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 46px;
+
+    gap: 8px;
+
+    border: none;
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        transform 0.1s;
+}
+
+.start-read-sun-btn h2,
+.start-read-moon-btn h2 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.start-read-sun-btn i,
+.start-read-moon-btn i {
+    font-size: 1rem;
+}
+
+/* Morning button */
+
+.start-read-sun-btn {
+    background-color: #598463;
+    color: #ffffff;
+}
+
+.start-read-sun-btn:hover {
+    background-color: #4a6e52;
+}
+
+/* Night button */
+
+.start-read-moon-btn {
+    background-color: #9dd1f1;
+    color: #ffffff;
+}
+
+.start-read-moon-btn:hover {
+    background-color: #92c8ea;
+}
+
+.start-read-sun-btn:active,
+.start-read-moon-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* ==========================================
+   8. Tasbih Section
+========================================== */
+
+.tasbih-section {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 200px;
+
+    padding: 24px;
+
+    border-radius: 24px;
+
+    background-color: #060c30;
+}
+
+.tasbih-beads {
+    width: 160px;
+    height: 160px;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   9. Fixed Bottom Home Button
+========================================== */
+
+.bottom-nav {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+
+    padding-top: 10px;
+}
+
+.home-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #060c30;
+
+    color: white;
+    font-size: 1.2rem;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   10. Language Switch (Uiverse)
+========================================== */
+
+.ui-switch {
+
+    /* Switch */
+
+    --switch-bg: rgb(135, 150, 165);
+    --switch-width: 48px;
+    --switch-height: 20px;
+
+    /* Circle */
+
+    --circle-diameter: 32px;
+    --circle-bg: rgb(0, 56, 146);
+
+    --circle-inset:
+        calc(
+            (var(--circle-diameter) - var(--switch-height))
+            / 2
+        );
+}
+
+.ui-switch input {
+    display: none;
+}
+
+.slider {
+    appearance: none;
+
+    position: relative;
+
+    width: var(--switch-width);
+    height: var(--switch-height);
+
+    background: var(--switch-bg);
+
+    border-radius: 999px;
+
+    cursor: pointer;
+}
+
+.slider .circle {
+    position: absolute;
+
+    top: calc(var(--circle-inset) * -1);
+    left: 0;
+
+    width: var(--circle-diameter);
+    height: var(--circle-diameter);
+
+    border-radius: inherit;
+
+    background: var(--circle-bg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    transition:
+        left 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slider .circle::after {
+    content: "AR";
+}
+
+.ui-switch input:checked + .slider .circle::after {
+    content: "EN";
+}
+
+.ui-switch input:checked + .slider .circle {
+    left: calc(100% - var(--circle-diameter));
+}
+
+
+/* ==========================================
+   11. Morning Adhkar Page
+========================================== */
+
+.morning-adhkar {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 20px 14px 100px;
+
+    font-family: 'Cairo', 'Arial', sans-serif;
+
+    box-sizing: border-box;
+}
+
+.adhkar-morning {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    max-width: 450px;
+
+    padding: 20px 15px;
+
+    border-radius: 12px;
+
+    background-color: #fdf3d7;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+    box-sizing: border-box;
+}
+
+.adhkar-morning p {
+    width: 100%;
+
+    margin: 0 0 16px;
+
+    font-size: 1.2rem;
+    line-height: 1.7;
+
+    color: #2c3e50;
+
+    text-align: center;
+
+    direction: rtl;
+
+    word-wrap: break-word;
+}
+
+.adhkar-morning button {
+    min-width: 40px;
+
+    padding: 4px 14px;
+
+    border: 1px solid #7f8c8d;
+    border-radius: 4px;
+
+    background-color: transparent;
+
+    color: #333;
+
+    font-size: 1rem;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.adhkar-morning button:active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+/* ==========================================
+   12. Night Adhkar Page
+========================================== */
+
+.night-adhkar {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 20px 14px 100px;
+
+    font-family: 'Cairo', 'Arial', sans-serif;
+
+    box-sizing: border-box;
+}
+
+.adhkar-night {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    max-width: 450px;
+
+    padding: 20px 15px;
+
+    border-radius: 12px;
+
+    background-color: #1d3950;
+
+    color: white;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+    box-sizing: border-box;
+}
+
+.adhkar-night p {
+    width: 100%;
+
+    margin: 0 0 16px;
+
+    font-size: 1.2rem;
+    line-height: 1.7;
+
+    text-align: center;
+
+    direction: rtl;
+
+    word-wrap: break-word;
+}
+
+.adhkar-night button {
+    min-width: 40px;
+
+    padding: 4px 14px;
+
+    border: 1px solid #7f8c8d;
+    border-radius: 4px;
+
+    background-color: #9dd1f1;
+
+    color: #1d3950;
+
+    font-size: 1rem;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.adhkar-night button:active {
+    background-color: #90c6e7;
+}
+.tisbih{
+    border-radius: 25px;
+    background-color: #060c30;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:3px;
+}
+.main_btn{
+    background-color: #060c30;
+    font-size: 3rem;
+    color: white;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.auto-btn{
+    background-color: #9dd1f1;
+    color: #060c30;
+    border: none;
+    width: 50px;
+    border-radius: 5px;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 24px;
+    box-sizing: border-box;
+    /* إلغاء justify-content القديم ليعتمد الترتيب على التدفق الطبيعي للأسفل */
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+/* حاوية الكروت */
+.prayers-container {
+    width: 100%;
+    max-width: 380px; 
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    /* إزالة الـ auto margin تماماً لمنع تشتت الفراغات */
+    margin-top: 0;   
+    margin-bottom: 100px; /* مسافة سفلية تضمن عدم تداخل الكروت مع شريط الـ Navbar */
+}
+
+/* الكرت المطور */
+.prayer-card {
+    background-color: #060c30;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(6, 12, 48, 0.06); /* ظل ناعم وحديث */
+    transition: transform 0.2s ease;
+}
+
+.prayer-name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* حل مشكلة تباعد أرقام الوقت */
+.prayer-time {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, sans-serif; /* يحل مشكلة الفراغات في النقطتين : */
+    letter-spacing: -0.5px; /* يقرب الأرقام لبعضها لتبدو أنيقة */
+}
+
+/* حاوية القسم التنازلي */
+.countdown-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;     /* مسافة علوية أنيقة تبعد العداد عن حافة الشاشة */
+    margin-bottom: 30px;  /* المسافة الثابتة والمدروسة بين العداد والكروت */
+    direction: rtl;
+}
+
+/* النص التعريفي (المتبقي على صلاة...) */
+#next-prayer-label {
+    font-size: 1.1rem;
+    color: #4a5568; /* لون رمادي داكن هادئ ومريح للعين */
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* أرقام العداد التنازلي الكبيرة */
+#countdown-timer {
+    font-size: 3rem; /* حجم كبير وواضح جداً */
+    font-weight: 800;
+    color: #060c30; /* نفس لون هوية تطبيقك الكحلي */
+    font-family: 'Courier New', Courier, monospace; /* ثبات الأرقام أثناء الحركة */
+    letter-spacing: 2px;
+}
+
+.page1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

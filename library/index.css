@@ -1,0 +1,72 @@
+body{
+  
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #ffffff 0%, #cbdffb 100%);
+  min-height: 100vh; /* لضمان أن تغطي الخلفية كامل الشاشة */
+
+}
+
+.layout{
+  width: 100%;
+  height: 100%;
+}
+
+.SPA{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, .1);
+  border-left-color: #1b1c1d; /* يمكنك تغيير اللون الأزرق هنا حسب رغبتك */
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin89345 1s linear infinite;
+  
+  /* كود التوسط في منتصف الشاشة */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* إضافة كود الأنيميشن الخاص بالدوران لتشغيل الحركة */
+@keyframes spin89345 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+/* كلاس لظهور المحتوى بنعومة */
+.fade-in {
+    opacity: 0;
+    animation: fadeInEffect 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+        transform: translateY(8px); /* حركة خفيفة من الأسفل للأعلى تعطي جمالية أكثر */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
